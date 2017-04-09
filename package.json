@@ -3,9 +3,9 @@
   "description": "Learn JavaScript by adventuring around in the terminal.",
   "version": "2.6.1",
   "repository": {
-    "url": "https://github.com/sethvincent/javascripting.git"
+    "url": "https://github.com/recruit-tech/javascripting.git"
   },
-  "author": "sethvincent",
+  "author": "yosuke-furukawa",
   "bin": {
     "javascripting": "./bin/javascripting"
   },
