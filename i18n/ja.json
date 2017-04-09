@@ -19,5 +19,6 @@
 		, "FUNCTIONS":              "関数"
 		, "FUNCTION ARGUMENTS":     "関数の引数"
 		, "SCOPE":                  "スコープ"
+		, "USE REGEX LUKE":         "正規表現を使え、ルーク"
 	}
 }
