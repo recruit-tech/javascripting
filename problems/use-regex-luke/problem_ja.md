@@ -42,7 +42,7 @@ incorrect zipcode 12345678
 incorrect zipcode 1111-222
 `;
 
-const results = zipcodes.match(/<need correct regex strings here>/g).map(zipcode => zpicode.trim());
+const results = zipcodes.match(/<need correct regex strings here>/g).map(zipcode => zipcode.trim());
 console.log(results);
 ```
 
