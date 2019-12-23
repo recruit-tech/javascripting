@@ -10,7 +10,7 @@ function getPageNums(current, total, size) {
   const s = current - size / 2;
   const e = current + size / 2;
   const start = s < 0 ? 0 : e > total ? total - size : s;
-  const end = e < 0 ? size : e > total ? total : e;
+  const end = s < 0 ? size : e > total ? total : e;
   const ranges = range(start, end);
   return ranges;
 }
