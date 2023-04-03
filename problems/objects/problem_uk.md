@@ -3,10 +3,10 @@
 Приклад:
 
 ```js
-var foodPreferences = {
-pizza: 'yum',
-salad: 'gross'
-};
+const foodPreferences = {
+  pizza: 'yum',
+  salad: 'gross'
+}
 ```
 
 ## Завдання:
@@ -16,11 +16,11 @@ salad: 'gross'
 У цьому файлі, оголосіть змінну `pizza` ось так:
 
 ```js
-var pizza = {
-toppings: ['cheese', 'sauce', 'pepperoni'],
-crust: 'deep dish',
-serves: 2
-};
+const pizza = {
+  toppings: ['cheese', 'sauce', 'pepperoni'],
+  crust: 'deep dish',
+  serves: 2
+}
 ```
 
 Використайте `console.log()`, щоб вивести об’єкт `pizza` до терміналу.

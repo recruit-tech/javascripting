@@ -1,7 +1,7 @@
 {
   "name": "@recruit-tech/javascripting",
   "description": "Learn JavaScript by adventuring around in the terminal.",
-  "version": "2.7.1",
+  "version": "2.7.4",
   "repository": {
     "url": "https://github.com/recruit-tech/javascripting.git"
   },
@@ -9,13 +9,22 @@
   "bin": {
     "javascripting": "./bin/javascripting"
   },
+  "dependencies": {
+    "colors": "1.4.0",
+    "diff": "^5.0.0",
+    "workshopper-adventure": "^7.0.0"
+  },
+  "devDependencies": {
+    "standard": "^16.0.3",
+    "workshopper-adventure-test": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=12.22.4"
+  },
+  "license": "MIT",
   "main": "./index.js",
   "preferGlobal": true,
-  "dependencies": {
-    "colors": "^1.0.3",
-    "promise": "^7.1.1",
-    "diff": "^1.2.1",
-    "workshopper-adventure": "^5.0.0"
-  },
-  "license": "MIT"
+  "scripts": {
+    "test": "standard && workshopper-adventure-test"
+  }
 }

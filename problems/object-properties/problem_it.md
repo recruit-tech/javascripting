@@ -3,11 +3,11 @@ Puoi accedere e manipolare proprietà degli oggetti –– le chiavi e i valori 
 Ecco un esempio usando le **parentesi quadre**:
 
 ```js
-var example = {
+const example = {
   pizza: 'yummy'
-};
+}
 
-console.log(example['pizza']);
+console.log(example['pizza'])
 ```
 
 Il codice precedente stamperà la stringa `'yummy'` sul terminale.
@@ -15,9 +15,9 @@ Il codice precedente stamperà la stringa `'yummy'` sul terminale.
 In alternativa, puoi usare la **notazione puntata** per ottenere un risultato identico:
 
 ```js
-example.pizza;
+example.pizza
 
-example['pizza'];
+example['pizza']
 ```
 
 Le due righe di codice precedenti restituiranno entrambe `yummy`.
@@ -29,9 +29,9 @@ Crea un file dal nome `object-properties.js`.
 In questo file, definisci una variabile chiamata `food` come segue:
 
 ```js
-var food = {
+const food = {
   types: 'only pizza'
-};
+}
 ```
 
 Usa `console.log()` per stampare la proprietà `types` dell'oggetto `food` sul terminale.

@@ -1,7 +1,7 @@
 I cicli for si presentano come il seguente:
 
 ```js
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   // scrive i numeri da 0 a 9
   console.log(i)
 }
@@ -27,7 +27,7 @@ Crea un ciclo for con una variabile `i` che inizia da 0 e viene incrementata di 
 Ad ogni iterazione del ciclo, aggiungi il valore di `i` alla variabile `total`. Per fare ciò, puoi usare quest'istruzione:
 
 ```js
-total += i;
+total += i
 ```
 
 Al termine del ciclo for, usa `console.log()` per stampare la variabile `total` sul terminale.

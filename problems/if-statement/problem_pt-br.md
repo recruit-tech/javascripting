@@ -4,9 +4,9 @@ Uma instrução condicional é mais ou menos assim:
 
 ```js
 if (n > 1) {
-  console.log('the variable n is greater than 1.');
+  console.log('the variable n is greater than 1.')
 } else {
-  console.log('the variable n is less than or equal to 1.');
+  console.log('the variable n is less than or equal to 1.')
 }
 ```
 
@@ -20,7 +20,7 @@ Crie uma arquivo chamado `if-statement.js`.
 
 No arquivo criado, declare uma variável chamada `fruit`.
 
-Faça a variável `fruit` referenciar o valor **orange** com o tipo **String**.
+Faça a variável `fruit` referenciar a cadeia de caracteres **orange**.
 
 Depois use o `console.log()` para imprimir "**The fruit name has more than five characters."** se o tamanho do valor da variável `fruit` é maior do que cinco.
 Caso contrário, imprima "**The fruit name has five characters or less.**"

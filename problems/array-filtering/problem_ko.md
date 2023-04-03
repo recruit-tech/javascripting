@@ -7,11 +7,11 @@
 여기에 예제가 있습니다.
 
 ```js
-var pets = ['cat', 'dog', 'elephant'];
+const pets = ['cat', 'dog', 'elephant']
 
-var filtered = pets.filter(function (pet) {
-  return (pet !== 'elephant');
-});
+const filtered = pets.filter(function (pet) {
+  return (pet !== 'elephant')
+})
 ```
 
 `filtered` 변수는 이제 `cat`과 `dog`만 가지고 있습니다.
@@ -23,7 +23,7 @@ var filtered = pets.filter(function (pet) {
 이 파일에 밑의 배열을 참조하는 `numbers`라는 변수를 정의합니다.
 
 ```js
-[1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 ```
 
 위에 있는 것처럼, `numbers.filter()`의 결과를 참조하는 `filtered`라는 변수를 선언합니다.
@@ -32,7 +32,7 @@ var filtered = pets.filter(function (pet) {
 
 ```js
 function evenNumbers (number) {
-  return number % 2 === 0;
+  return number % 2 === 0
 }
 ```
 

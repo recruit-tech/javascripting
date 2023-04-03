@@ -1,7 +1,7 @@
 Loops com *for* são dessa forma:
 
 ```js
-for (var i = 0; i < 10; i++) {
+for (let i = 0; i < 10; i++) {
   // log the numbers 0 through 9
   console.log(i)
 }
@@ -27,7 +27,7 @@ Crie um loop for com a variável `i` iniciando do 0 aumentando por um 1 á cada 
 Á cada iteração do loop, adicione o número do `i` á variável `total`. Para fazer isto, você pode usar a seguinte expressão:
 
 ```js
-total += i;
+total += i
 ```
 
 Após o loop, use o `console.log()` para imprimir a variável `total` ao terminal.

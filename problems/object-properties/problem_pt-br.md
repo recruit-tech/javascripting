@@ -3,11 +3,11 @@ Você pode acessar e manipular propriedades de objetos –– as chaves e valore
 Aqui está um exemplo usando **colchetes**:
 
 ```js
-var example = {
+const example = {
   pizza: 'yummy'
-};
+}
 
-console.log(example['pizza']);
+console.log(example['pizza'])
 ```
 
 O código acima vai imprimir no terminal a string `'yummy'`.
@@ -15,9 +15,9 @@ O código acima vai imprimir no terminal a string `'yummy'`.
 Como alternativa você pode utilizar **ponto** para obter o mesmo resultado:
 
 ```js
-example.pizza;
+example.pizza
 
-example['pizza'];
+example['pizza']
 ```
 
 As duas linhas de código acima retornarão `yummy`.
@@ -29,9 +29,9 @@ Crie um arquivo chamado `object-properties.js`.
 Neste arquivo, defina uma variável chamada `food` desta maneira:
 
 ```js
-var food = {
+const food = {
   types: 'only pizza'
-};
+}
 ```
 
 Use o `console.log()` para imprimir a propriedade `types` do objeto `food` no terminal.

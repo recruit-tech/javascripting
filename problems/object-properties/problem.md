@@ -3,11 +3,11 @@ You can access and manipulate object properties –– the keys and values that 
 Here's an example using **square brackets**:
 
 ```js
-var example = {
+const example = {
   pizza: 'yummy'
-};
+}
 
-console.log(example['pizza']);
+console.log(example['pizza'])
 ```
 
 The above code will print the string `'yummy'` to the terminal.
@@ -15,9 +15,9 @@ The above code will print the string `'yummy'` to the terminal.
 Alternately, you can use **dot notation** to get identical results:
 
 ```js
-example.pizza;
+example.pizza
 
-example['pizza'];
+example['pizza']
 ```
 
 The two lines of code above will both return `yummy`.
@@ -29,9 +29,9 @@ Create a file named `object-properties.js`.
 In that file, define a variable named `food` like this:
 
 ```js
-var food = {
+const food = {
   types: 'only pizza'
-};
+}
 ```
 
 Use `console.log()` to print the `types` property of the `food` object to the terminal.

@@ -3,10 +3,10 @@
 예제를 보세요.
 
 ```js
-var foodPreferences = {
+const foodPreferences = {
   pizza: 'yum',
   salad: 'gross'
-};
+}
 ```
 
 ## 도전 과제
@@ -16,11 +16,11 @@ var foodPreferences = {
 파일 안에서 이렇게 `pizza`라는 변수를 정의합니다.
 
 ```js
-var pizza = {
+const pizza = {
   toppings: ['cheese', 'sauce', 'pepperoni'],
   crust: 'deep dish',
   serves: 2
-};
+}
 ```
 
 `console.log()`를 사용해 `pizza` 객체를 터미널에 출력합니다.

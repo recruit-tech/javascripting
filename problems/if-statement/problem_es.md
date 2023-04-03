@@ -3,10 +3,10 @@ Los bloques condicionales son utilizados, partiendo de una condición booleana e
 Un bloque condicional se parece a lo siguiente:
 
 ```js
-if(n > 1) {
-  console.log('la variable n es mayor a 1.');
+if (n > 1) {
+  console.log('la variable n es mayor a 1.')
 } else {
-  console.log('la variable n es menor o igual a 1.');
+  console.log('la variable n es menor o igual a 1.')
 }
 ```
 
@@ -20,7 +20,7 @@ Crea un archivo llamando `if-statement.js`.
 
 En ese archivo, declara una variabe llamada `fruit`.
 
-Haz la variable `fruit` referenciar al valor **orange**, del tipo **String**.
+Haz la variable `fruit` referenciar a la cadena de caracteres **"orange"**.
 
 Luego utiliza `console.log()` para imprimir a la terminal "**The fruit name has more than five characters."** si el length de la variable `fruit` es mayor a cinco.
 Imprime "**The fruit name has five characters or less.**" de lo contrario.

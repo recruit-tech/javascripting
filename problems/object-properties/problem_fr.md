@@ -3,11 +3,11 @@ Vous pouvez manipuler les propriétés d'objets — les clés et valeurs qu'un o
 Voici un example utilisant des **crochets** :
 
 ```js
-var example = {
+const example = {
   pizza: 'yummy'
-};
+}
 
-console.log(example['pizza']);
+console.log(example['pizza'])
 ```
 
 Le code ci-dessus va afficher la chaine de caractères `yummy` dans le terminal.
@@ -15,9 +15,9 @@ Le code ci-dessus va afficher la chaine de caractères `yummy` dans le terminal.
 Une alternative consiste à utiliser la **notation en point** pour avoir le même résultat :
 
 ```js
-example.pizza;
+example.pizza
 
-example['pizza'];
+example['pizza']
 ```
 
 Les deux lignes de code ci-dessus renverront `yummy`.
@@ -29,9 +29,9 @@ Créez un fichier nommé `proprietes-objet.js`.
 Dans ce fichier, définissez une variable nommée `food` comme ceci :
 
 ```js
-var food = {
+const food = {
   types: 'only pizza'
-};
+}
 ```
 
 Utilisez `console.log()` pour afficher la propriété `types` de l'objet `food` dans le terminal.
