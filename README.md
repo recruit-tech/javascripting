@@ -21,7 +21,7 @@ Install it from [nodejs.org](https://nodejs.org/)
 Open your terminal and run this command:
 
 ```
-npm install -g javascripting
+npm install -g @recruit-tech/javascripting
 ```
 
 The `-g` option installs this module globally so that you can run it as a command in your terminal.
