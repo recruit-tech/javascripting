@@ -18,6 +18,10 @@
 		, "OBJECT PROPERTIES":      "オブジェクトのプロパティ"
 		, "FUNCTIONS":              "関数"
 		, "FUNCTION ARGUMENTS":     "関数の引数"
+		, "CALLBACK":               "コールバック関数"
+	    , "PROMISE":                "Promiseオブジェクト"
+        , "PROMISE ALL":            "Promise.all"
+        , "ASYNC AWAIT":            "async/await"
 		, "SCOPE":                  "スコープ"
 		, "USE REGEX LUKE":         "正規表現を使え、ルーク"
 	}
