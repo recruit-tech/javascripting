@@ -29,23 +29,11 @@ const displayAllPosts = async () => {
   }
 }
 
+displayAllPosts()
+
 const displayAllPostsWithPromiseAll = async () => {
   const posts = (await Promise.all(users.map(user => fetchPosts(user)))).flat()
   for (const post of posts) {
     console.log(post)
   }
 }
-
-const main = async () => {
-  console.time('displayAllPosts')
-  await displayAllPosts()
-  console.timeEnd('displayAllPosts')
-
-  console.log('==============================================')
-
-  console.time('displayAllPostsWithPromiseAll')
-  await displayAllPostsWithPromiseAll()
-  console.timeEnd('displayAllPostsWithPromiseAll')
-}
-
-main()
