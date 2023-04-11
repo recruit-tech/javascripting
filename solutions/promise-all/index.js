@@ -20,20 +20,16 @@ const fetchData = (key) => {
   })
 }
 
-console.time('Promise.all')
 Promise.all([
   fetchData('quick'),
   fetchData('medium'),
   fetchData('slow')
 ])
   .then((dataList) => { console.log(dataList) })
-  .then(() => { console.timeEnd('Promise.all') })
 
-console.time('Promise.any')
 Promise.any([
   fetchData('quick'),
   fetchData('medium'),
   fetchData('slow')
 ])
   .then((dataList) => { console.log(dataList) })
-  .then(() => { console.timeEnd('Promise.any') })
