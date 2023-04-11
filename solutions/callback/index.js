@@ -1,6 +1,6 @@
-console.time('setTimeout')
+// console.time('setTimeout')
 
 setTimeout(() => {
   console.log('callback function is executed!')
-  console.timeEnd('setTimeout')
+  // console.timeEnd('setTimeout')
 }, 1000)
