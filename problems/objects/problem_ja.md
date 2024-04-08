@@ -2,28 +2,25 @@
 
 たとえば...
 
-
 ```js
 const foodPreferences = {
-  pizza: 'yum',
-  salad: 'gross'
-}
+  pizza: "yum",
+  salad: "gross",
+};
 ```
 
 ## やってみよう
 
-
 `objects.js` ファイルを作りましょう。
-
 
 ファイルの中で、変数 `pizza` を次のようにして定義してください...
 
 ```js
 const pizza = {
-  toppings: ['cheese', 'sauce', 'pepperoni'],
-  crust: 'deep dish',
-  serves: 2
-}
+  toppings: ["cheese", "sauce", "pepperoni"],
+  crust: "deep dish",
+  serves: 2,
+};
 ```
 
 `console.log()` を使って、 `pizza` オブジェクトをターミナルに表示しましょう。

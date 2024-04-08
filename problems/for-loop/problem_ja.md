@@ -4,7 +4,7 @@ for ループを使うと、コードの塊を何回も繰り返し実行でき�
 ```js
 for (let i = 0; i < 10; i++) {
   // log the numbers 0 through 9
-  console.log(i)
+  console.log(i);
 }
 ```
 
@@ -34,7 +34,7 @@ forループを作りましょう。変数 `i` を0から始めループのた�
 ループを繰り返すたびに、 数値 `i` を `total` に足しましょう。こんな風に...
 
 ```js
-total += i
+total += i;
 ```
 
 ループが終わったら、 `console.log()` を使い、変数 `total` をターミナルに表示しましょう。

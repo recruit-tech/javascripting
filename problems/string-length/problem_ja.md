@@ -3,8 +3,8 @@
 そういう時は `.length` プロパティを使います。たとえば...
 
 ```js
-const example = 'example string'
-example.length
+const example = "example string";
+example.length;
 ```
 
 `example` と `length` の間にピリオドが必要です。気をつけましょう。

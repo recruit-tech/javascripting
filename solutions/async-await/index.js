@@ -6,34 +6,30 @@ const fetchPosts = (user) => {
         `${user}: post2`,
         `${user}: post3`,
         `${user}: post4`,
-        `${user}: post5`
-      ])
-    }, 1000)
-  })
-}
+        `${user}: post5`,
+      ]);
+    }, 1000);
+  });
+};
 
-const users = [
-  'user1',
-  'user2',
-  'user3',
-  'user4',
-  'user5'
-]
+const users = ["user1", "user2", "user3", "user4", "user5"];
 
 const displayAllPosts = async () => {
   for (const user of users) {
-    const posts = await fetchPosts(user)
+    const posts = await fetchPosts(user);
     for (const post of posts) {
-      console.log(post)
+      console.log(post);
     }
   }
-}
+};
 
-displayAllPosts()
+displayAllPosts();
 
 const displayAllPostsWithPromiseAll = async () => {
-  const posts = (await Promise.all(users.map(user => fetchPosts(user)))).flat()
+  const posts = (
+    await Promise.all(users.map((user) => fetchPosts(user)))
+  ).flat();
   for (const post of posts) {
-    console.log(post)
+    console.log(post);
   }
-}
+};

@@ -10,31 +10,32 @@ JavaScriptには、二つのスコープがあります。グローバルとロ�
 次のソースコードのコメントを読んでください...
 
 ```js
-const a = 4 // a はグローバル変数です。下の全ての関数から参照できます。
+const a = 4; // a はグローバル変数です。下の全ての関数から参照できます。
 
-function foo () {
-  const b = a * 3 // b は foo 関数の外からは参照できません。 foo 関数の中で定義した関数 bar からは参照できます。
+function foo() {
+  const b = a * 3; // b は foo 関数の外からは参照できません。 foo 関数の中で定義した関数 bar からは参照できます。
 
-  function bar (c) {
-    const b = 2 // bar 関数の中でもう一つ b 変数を定義します
+  function bar(c) {
+    const b = 2; // bar 関数の中でもう一つ b 変数を定義します
     // 新しい b を変更しても、元の b 変数は変わりません。
-    console.log(a, b, c)
+    console.log(a, b, c);
   }
 
-  bar(b * 4)
+  bar(b * 4);
 }
 
-foo() // 4, 2, 48
+foo(); // 4, 2, 48
 ```
 
 即時実行関数式 (Immediately Invoked Function Expression : IIFE) という共通パターンで、ローカルスコープを作れます。
 例えば...
 
 ```js
-(function () { // 関数式をカッコで括ります
+(function () {
+  // 関数式をカッコで括ります
   // 変数はここで定義します
   // 関数の外からは参照できません
-})() // 関数を即座に実行します
+})(); // 関数を即座に実行します
 ```
 
 ## やってみよう
@@ -43,23 +44,28 @@ foo() // 4, 2, 48
 ファイルの中に、次のソースコードをコピーしましょう...
 
 ```js
-const a = 1; const b = 2; const c = 3;
+const a = 1;
+const b = 2;
+const c = 3;
 
-(function firstFunction () {
-  const b = 5; const c = 6;
+(function firstFunction() {
+  const b = 5;
+  const c = 6;
 
-  (function secondFunction () {
+  (function secondFunction() {
     const b = 8;
 
-    (function thirdFunction () {
-      const a = 7; const c = 9;
+    (function thirdFunction() {
+      const a = 7;
+      const c = 9;
 
-      (function fourthFunction () {
-        const a = 1; const c = 8
-      })()
-    })()
-  })()
-})()
+      (function fourthFunction() {
+        const a = 1;
+        const c = 8;
+      })();
+    })();
+  })();
+})();
 ```
 
 変数のスコープを活用しましょう。次のコードを関数の中に配置してください。`scope.js` の中の関数です。

@@ -1,7 +1,7 @@
 配列は、値のリストです。たとえば、こう...
 
 ```js
-const pets = ['cat', 'dog', 'rat']
+const pets = ["cat", "dog", "rat"];
 ```
 
 ## やってみよう
@@ -20,4 +20,3 @@ const pets = ['cat', 'dog', 'rat']
 ```bash
 javascripting verify arrays.js
 ```
-

@@ -5,16 +5,20 @@ Promise では `.then` と `.catch` を使って非同期処理を記述して�
 
 ```js
 const displayMyPosts = () => {
-  return (
-    fetchMe()
-      .then((me) => {
-        fetchPosts({ userId: me.id })
-          .then((posts) => { console.log(posts) })
-          .catch((e) => { console.error(e) })
-      })
-      .catch((e) => { console.error(e) })
-  )
-}
+  return fetchMe()
+    .then((me) => {
+      fetchPosts({ userId: me.id })
+        .then((posts) => {
+          console.log(posts);
+        })
+        .catch((e) => {
+          console.error(e);
+        });
+    })
+    .catch((e) => {
+      console.error(e);
+    });
+};
 ```
 
 そこで `async` キーワードと `await` キーワードを使うことで、可読性を保ちながら非同期処理が記述できます。
@@ -22,13 +26,13 @@ const displayMyPosts = () => {
 ```js
 const displayMyPosts = async () => {
   try {
-    const me = await fetchMe()
-    const posts = await fetchPosts({ userId: me.id })
-    console.log(posts)
+    const me = await fetchMe();
+    const posts = await fetchPosts({ userId: me.id });
+    console.log(posts);
   } catch (e) {
-    console.error(e)
+    console.error(e);
   }
-}
+};
 ```
 
 関数宣言や関数定義の前に `async` キーワードをつけることで、その関数が非同期処理を扱うことを示すことができます。
@@ -53,18 +57,12 @@ const fetchPosts = (user) => {
         `${user}: post3`,
         `${user}: post4`,
         `${user}: post5`,
-      ])
-    }, 1000)
-  })
-}
+      ]);
+    }, 1000);
+  });
+};
 
-const users = [
-  'user1',
-  'user2',
-  'user3',
-  'user4',
-  'user5',
-]
+const users = ["user1", "user2", "user3", "user4", "user5"];
 ```
 
 `users` 配列の中に入った文字列を `fetchPosts` 関数に渡し、各ユーザーの投稿を標準出力に表示する `displayAllPosts` 関数を定義し実行してください。

@@ -1,5 +1,5 @@
 module.exports = {
-  exercisesFolder: 'solutions',
-  testFileRegex: 'index.js',
-  spaceChar: '-'
-}
+  exercisesFolder: "solutions",
+  testFileRegex: "index.js",
+  spaceChar: "-",
+};

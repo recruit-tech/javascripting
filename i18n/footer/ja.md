@@ -1,1 +1,1 @@
-__ヘルプが必要ですか？?__ このワークショップのREADMEを読んでください。: https://github.com/ledsun/javascripting
+**ヘルプが必要ですか？?** このワークショップのREADMEを読んでください。: https://github.com/ledsun/javascripting

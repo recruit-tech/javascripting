@@ -3,9 +3,9 @@
 引用符は一重引用符と二重引用符のどちらも使えます。例えば...
 
 ```js
-'this is a string'
+"this is a string";
 
-"this is also a string"
+"this is also a string";
 ```
 
 ## 注意
@@ -19,7 +19,7 @@
 ファイルの中で、次のように変数 `someString` を作りましょう。
 
 ```js
-const someString = 'this is a string'
+const someString = "this is a string";
 ```
 
 `console.log` を使い、変数 **someString** をターミナルに表示しましょう。

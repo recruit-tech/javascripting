@@ -4,7 +4,6 @@
 
 # 問題
 
-
 次の条件を満たす、 getPageNums 関数を作ってください。
 
 current, total, size の3つの変数が与えられます。totalは総ページ数を表します。currentは現在のページ数を表します。sizeは返却したいページの長さを表します。 
@@ -15,7 +14,7 @@ total からはみ出ないように、現在のページを中央値として�
 function range(start, end) {
   const r = [];
   for (let i = Math.floor(start); i < Math.floor(end); i++) {
-    r.push(i+1);
+    r.push(i + 1);
   }
   return r;
 }

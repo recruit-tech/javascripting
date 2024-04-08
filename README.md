@@ -1,10 +1,11 @@
 # JAVASCRIPTING
 
-> Learn JavaScript by adventuring around in the terminal.  
+> Learn JavaScript by adventuring around in the terminal.
 
 > _Looking for more interactive tutorials like this? Go to [nodeschool.io](http://nodeschool.io)._
 
 ## Get help
+
 Having issues with javascripting? Get help troubleshooting in the [nodeschool discussions repo](https://github.com/nodeschool/discussions),
 on [gitter](https://gitter.im/nodeschool/discussions) or in [repository issues](https://github.com/workshopper/javascripting/issues)
 
@@ -38,7 +39,7 @@ You'll see the menu:
 
 ![javascripting screenshot](screenshot.png)
 
-Navigate the menu with the up & down arrow keys. 
+Navigate the menu with the up & down arrow keys.
 
 Choose a challenge by hitting enter.
 
@@ -46,9 +47,9 @@ Choose a challenge by hitting enter.
 
 ![first challenge](javascripting.gif)
 
-In the gif I'm using the command line editor `nano` ([here are some basic usage tips for nano](https://github.com/sethvincent/dev-envs-book/blob/master/chapters/05-editors.md#nano)).  
+In the gif I'm using the command line editor `nano` ([here are some basic usage tips for nano](https://github.com/sethvincent/dev-envs-book/blob/master/chapters/05-editors.md#nano)).
 
-You can use any editor you like. 
+You can use any editor you like.
 
 [atom](http://atom.io) or [brackets](http://brackets.io/) are both good options.
 

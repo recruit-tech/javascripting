@@ -5,9 +5,9 @@
 以下に例を示します...
 
 ```js
-const pets = ['cat', 'dog', 'rat']
+const pets = ["cat", "dog", "rat"];
 
-console.log(pets[0])
+console.log(pets[0]);
 ```
 
 上記のコードは配列 `pets` の最初の要素、つまり文字列 `cat` を表示します。
@@ -17,7 +17,7 @@ console.log(pets[0])
 有効な書き方
 
 ```js
-console.log(pets[0])
+console.log(pets[0]);
 ```
 
 ドット表記を使ってもアクセスできません。
@@ -33,10 +33,10 @@ console.log(pets.1);
 `accessing-array-values.js` ファイルを作りましょう。
 
 ファイルの中で、次の配列 `food` を定義します。
-```js
-const food = ['apple', 'pizza', 'pear']
-```
 
+```js
+const food = ["apple", "pizza", "pear"];
+```
 
 `console.log()` を使って、配列の `2` 番目の値をターミナルに出力してください。
 

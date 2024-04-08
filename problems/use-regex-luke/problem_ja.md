@@ -5,7 +5,8 @@
 そのような場合、以下のように記述してマッチしているものを見つけます。
 
 ```js
-const example = 'Hello World My Phone Number is 111222333. and this is my zip-code 1112222';
+const example =
+  "Hello World My Phone Number is 111222333. and this is my zip-code 1112222";
 const result = example.match(/(\d{9,})/g);
 console.log(result && result[0]); //1111222333
 ```

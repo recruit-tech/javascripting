@@ -10,10 +10,12 @@
 ```js
 // resolved after 3000ms
 Promise.all([
-  sleep(1000).then(() => 'quick'),
-  sleep(2000).then(() => 'medium'),
-  sleep(3000).then(() => 'slow'),
-]).then((v) => { console.log(v) }) // ['quick', 'medium', 'slow']
+  sleep(1000).then(() => "quick"),
+  sleep(2000).then(() => "medium"),
+  sleep(3000).then(() => "slow"),
+]).then((v) => {
+  console.log(v);
+}); // ['quick', 'medium', 'slow']
 ```
 
 `Promise.any` 関数では引数の配列の要素内の全ての Promise の解決のを待つのとは逆に、どれかひとつが解決されることで返り値の Promise も解決されます。
@@ -23,10 +25,12 @@ Promise.all([
 ```js
 // resolved after 1000ms
 Promise.any([
-  sleep(1000).then(() => 'quick'),
-  sleep(2000).then(() => 'medium'),
-  sleep(3000).then(() => 'slow'),
-]).then((v) => { console.log(v) }) // 'quick'
+  sleep(1000).then(() => "quick"),
+  sleep(2000).then(() => "medium"),
+  sleep(3000).then(() => "slow"),
+]).then((v) => {
+  console.log(v);
+}); // 'quick'
 ```
 
 ## やってみよう
@@ -38,25 +42,31 @@ Promise.any([
 ```js
 const fetchData = (key) => {
   return new Promise((resolve, reject) => {
-    switch(key) {
-      case 'quick':
-        setTimeout(() => { resolve('quick: hi!') }, 1000)
-        break
+    switch (key) {
+      case "quick":
+        setTimeout(() => {
+          resolve("quick: hi!");
+        }, 1000);
+        break;
 
-      case 'medium':
-        setTimeout(() => { resolve('medium: hello!!') }, 2000)
-        break
+      case "medium":
+        setTimeout(() => {
+          resolve("medium: hello!!");
+        }, 2000);
+        break;
 
-      case 'slow':
-        setTimeout(() => { resolve('slow: good morning!!!') }, 3000)
-        break
+      case "slow":
+        setTimeout(() => {
+          resolve("slow: good morning!!!");
+        }, 3000);
+        break;
 
       default:
-        reject(new Error(`unknown key: ${key}`))
-        break
+        reject(new Error(`unknown key: ${key}`));
+        break;
     }
-  })
-}
+  });
+};
 ```
 
 `fetchData('quick')` , `fetchData('medium')` , `fetchData('slow')` の三つの返り値が全て解決されるまで待ち、その返り値を標準出力に表示してください。
