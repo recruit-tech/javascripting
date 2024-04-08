@@ -8,6 +8,7 @@
     "NUMBERS": "数値",
     "ROUNDING NUMBERS": "数値丸め",
     "NUMBER TO STRING": "数値を文字列に",
+    "COMPARE": "比較",
     "IF STATEMENT": "if文",
     "FOR LOOP": "forループ",
     "ARRAYS": "配列",
