@@ -4,9 +4,9 @@
 
 ```js
 if (n > 1) {
-  console.log("the variable n is greater than 1.");
+  console.log("変数 `n` は 1 より大きい");
 } else {
-  console.log("the variable n is less than or equal to 1.");
+  console.log("変数 `n` は 1 以下だ");
 }
 ```
 
@@ -20,10 +20,10 @@ if (n > 1) {
 
 ファイルの中で、変数 `fruit` を定義しましょう。
 
-変数 `fruit` は**文字列型**の**orange**を表します。
+変数 `fruit` は **文字列型** の **orange** を表します。
 
-`fruit` の文字数が5より大きかったら、console.log() を使い、**The fruit name has more than five characters.**をターミナルに表示しましょう。
-そうでなければ**The fruit name has five characters or less.**を表示しましょう。
+`fruit` の文字数が5より大きかったら、console.log() を使い、 **The fruit name has more than five characters.** をターミナルに表示しましょう。
+そうでなければ **The fruit name has five characters or less.** を表示しましょう。
 
 次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
 
