@@ -3,7 +3,7 @@ const fs = require('fs')
 const problem = require('./lib/problem')
 
 const i18nDir = path.join(__dirname, 'i18n')
-const languages = ['ja', 'en'].concat(fs.readdirSync(i18nDir)
+const languages = ['ja'].concat(fs.readdirSync(i18nDir)
   .filter((f) => f.match(/\w+\.json/))
   .map((f) => f.replace('.json', ''))
   .filter((f) => f !== 'ja')
