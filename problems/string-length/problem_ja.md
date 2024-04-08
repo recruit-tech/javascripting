@@ -3,13 +3,13 @@
 そういう時は `.length` プロパティを使います。たとえば...
 
 ```js
-const example = "example string";
+const example = 'example string';
 example.length;
 ```
 
 `example` と `length` の間にピリオドが必要です。気をつけましょう。
 
-上のコードは文字列に含まれる文字の**数**を返します。
+上のコードは文字列に含まれる文字の **数** を返します。
 
 ⚠️: 正確には `.length` が返すのは UTF-16 コード単位の数であり、一部の文字では文字数とは異なる値が返ります。 (e.g.: 👀)
 
@@ -19,7 +19,7 @@ example.length;
 
 ファイルの中で、変数 `example` を作りましょう。
 
-変数 `example` に文字列 `'example string'` を代入しましょう。
+変数 `example` に文字列 `"example string"` を代入しましょう。
 
 `console.log` を使い、文字列の **length** をターミナルに表示しましょう。
 
