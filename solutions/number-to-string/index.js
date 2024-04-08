@@ -1,2 +1,2 @@
-const n = 128;
-console.log(n.toString());
+const number = 128;
+console.log(number.toString());

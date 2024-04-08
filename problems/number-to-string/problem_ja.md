@@ -3,17 +3,17 @@
 そういう時は `toString()` メソッドを使います。たとえば...
 
 ```js
-let n = 256;
-n = n.toString();
+const number = 256;
+const numString = number.toString();
 ```
 
 ## やってみよう
 
 `number-to-string.js` ファイルを作りましょう。
 
-ファイルの中で、数値 `128` を表す変数 `n` を定義しましょう。
+ファイルの中で、数値 `128` を表す変数 `number` を定義しましょう。
 
-変数 `n` の `toString()` メソッドを呼びましょう。
+変数 `number` の `toString()` メソッドを呼びましょう。
 
 `console.log()` を使い、`toString()` メソッドの結果をターミナルに表示しましょう。
 
