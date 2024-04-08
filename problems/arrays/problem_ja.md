@@ -4,6 +4,12 @@
 const pets = ["cat", "dog", "rat"];
 ```
 
+異なる型の値を含めたり、ネストさせることもできます。
+
+```js
+["string", 10, ["nested array"]];
+```
+
 ## やってみよう
 
 `arrays.js` ファイルを作りましょう。
