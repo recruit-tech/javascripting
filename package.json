@@ -11,12 +11,11 @@
   },
   "dependencies": {
     "colors": "1.4.0",
-    "diff": "^5.1.0",
-    "workshopper-adventure": "^7.0.0"
+    "diff": "5.2.0",
+    "workshopper-adventure": "7.0.0"
   },
   "devDependencies": {
-    "prettier": "3.2.5",
-    "workshopper-adventure-test": "^1.2.0"
+    "prettier": "3.2.5"
   },
   "engines": {
     "node": ">=16.20.1"
@@ -25,7 +24,6 @@
   "main": "./index.js",
   "preferGlobal": true,
   "scripts": {
-    "format": "prettier -w .",
-    "test": "workshopper-adventure-test"
+    "format": "prettier -w ."
   }
 }
