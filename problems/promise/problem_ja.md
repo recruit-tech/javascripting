@@ -65,7 +65,7 @@ const processData = (data) => `data: ${data}`;
 ```
 
 `fetchData` 関数で得られた値を `processData` 関数で加工し、 `console.log` で出力するコードを書いてみましょう。
-`fetchData` 関数の引数には `'greeting'` を渡すパターンと `'credential'` を渡すパターンを書き、エラーが発生した際はそのエラーを `console.error` を使って出力してください。
+`fetchData` 関数の引数には `"greeting"` を渡すパターンと `"credential"` を渡すパターンを書き、エラーが発生した際はそのエラーを `console.error` を使って出力してください。
 
 次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
 

@@ -26,7 +26,7 @@ const example = "some string";
 
 ファイルの中で `example` 変数を宣言します。
 
-**変数** `example` に値 `'some string'` を代入します。
+**変数** `example` に値 `"some string"` を代入します。
 
 そして `console.log()` を使い、変数 `example` をコンソールに表示します。
 
