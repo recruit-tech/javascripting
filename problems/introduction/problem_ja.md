@@ -1,6 +1,6 @@
 このワークショップで使うディレクトリを作りましょう。
 
-次のコマンドを実行して、`javascripting` ディレクトリを作ります。
+次のコマンドを実行して、 `javascripting` ディレクトリを作ります。
 
 ```bash
 mkdir javascripting
