@@ -10,7 +10,7 @@ HTTP リクエストなどの処理を同期的に実行すると、上から順
 
 `timeout.js` ファイルを作りましょう。
 
-`setTimeout` 関数を使って 1 秒後に "callback function is executed!" と出力してください。
+`setTimeout` 関数を使って 1 秒後に `"callback function is executed!"` と出力してください。
 
 次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
 
