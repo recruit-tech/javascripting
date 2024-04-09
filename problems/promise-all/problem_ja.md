@@ -69,8 +69,8 @@ const fetchData = (key) => {
 };
 ```
 
-`fetchData('quick')` , `fetchData('medium')` , `fetchData('slow')` の三つの返り値が全て解決されるまで待ち、その返り値を標準出力に表示してください。
-また、 `fetchData('quick')` , `fetchData('medium')` , `fetchData('slow')` の三つの返り値のうちどれかひとつが解決されるまで待ち、最も早かった Promise の返り値を標準出力に表示してください。
+`fetchData("quick")` , `fetchData("medium")` , `fetchData("slow")` の三つの返り値が全て解決されるまで待ち、その返り値を標準出力に表示してください。
+また、 `fetchData("quick")` , `fetchData("medium")` , `fetchData("slow")` の三つの返り値のうちどれかひとつが解決されるまで待ち、最も早かった Promise の返り値を標準出力に表示してください。
 
 次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
 
