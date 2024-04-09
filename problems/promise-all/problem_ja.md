@@ -1,11 +1,11 @@
-非同期処理を取り扱うための Promise には便利な関数がいくつか用意されています。
+非同期処理を取り扱うための `Promise` には便利な関数がいくつか用意されています。
 
 ここでは `Promise.all` 関数と `Promise.any` 関数について紹介します。
-この二つの関数は Promise を要素に持つ配列を引数に受け、 Promise を返します。
+この二つの関数は `Promise` を要素に持つ配列を引数に受け、 `Promise` を返します。
 
-`Promise.all` 関数の返り値の Promise は、引数の配列内の Promise が全て解決されると解決されます。
-返り値の Promise によって解決される値は、引数の配列の要素の Promise によって解決された値の配列です。
-また、配列内の Promise のうちのいづれかが拒否されると返り値の Promise も拒否されます。
+`Promise.all` 関数の返り値の `Promise` は、引数の配列内の `Promise` が全て解決されると解決されます。
+返り値の `Promise` によって解決される値は、引数の配列の要素の `Promise` によって解決された値の配列です。
+また、配列内の `Promise` のうちのいづれかが拒否されると返り値の `Promise` も拒否されます。
 
 ```js
 // resolved after 3000ms
@@ -18,9 +18,9 @@ Promise.all([
 }); // ['quick', 'medium', 'slow']
 ```
 
-`Promise.any` 関数では引数の配列の要素内の全ての Promise の解決のを待つのとは逆に、どれかひとつが解決されることで返り値の Promise も解決されます。
-返り値の Promise によって解決される値は、引数の配列の要素の Promise の中で一番最初に解決された値になります。
-また、配列内の Promise のうちのいづれかが拒否されると返り値の Promise も拒否されます。
+`Promise.any` 関数では引数の配列の要素内の全ての `Promise` の解決のを待つのとは逆に、どれかひとつが解決されることで返り値の `Promise` も解決されます。
+返り値の `Promise` によって解決される値は、引数の配列の要素の `Promise` の中で一番最初に解決された値になります。
+また、配列内の `Promise` のうちのいづれかが拒否されると返り値の `Promise` も拒否されます。
 
 ```js
 // resolved after 1000ms
@@ -79,4 +79,4 @@ const fetchData = (key) => {
 もしも余裕がある人は `console.time` / `console.timeEnd` 関数を使ってそれぞれの処理が完了するまでに掛かった時間を計測して出力してみましょう。
 
 - `console.time(label)`: 時間計測を開始します
-- `console.timeEnd(label)`: 対応する `label` の時間計測を終了し、経過した時間を出力します。
+- `console.timeEnd(label)`: 対応する `label` の時間計測を終了し、経過した時間を出力します
