@@ -45,5 +45,5 @@ const obj2 = {
 次のコマンドを実行し、あなたのプログラムがどのように動くか確認しましょう...
 
 ```bash
-javascripting verify objects.js
+javascripting verify object_spreading.js
 ```
