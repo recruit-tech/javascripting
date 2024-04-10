@@ -17,6 +17,8 @@
     "LOOPING THROUGH ARRAYS": "配列をループする",
     "OBJECTS": "オブジェクト",
     "OBJECT PROPERTIES": "オブジェクトのプロパティ",
+    "OBJECT KEYS": "オブジェクトのキー",
+    "OBJECT SPREADING": "スプレッド構文",
     "FUNCTIONS": "関数",
     "FUNCTION ARGUMENTS": "関数の引数",
     "ARROW FUNCTIONS": "アロー関数",
