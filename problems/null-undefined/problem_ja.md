@@ -49,16 +49,16 @@ null === undefined; // -> false
 
 ```js
 const nullable1 = {};
-nullable1 || 'default'; // -> {}
-nullable1 ?? 'default'; // -> {}
+nullable1 || "default"; // -> {}
+nullable1 ?? "default"; // -> {}
 
 const nullable2 = null;
-nullable2 || 'default'; // -> "default"
-nullable2 ?? 'default'; // -> "default"
+nullable2 || "default"; // -> "default"
+nullable2 ?? "default"; // -> "default"
 
 const nullable3 = false;
-nullable3 || 'default'; // -> "default"
-nullable3 ?? 'default'; // -> false
+nullable3 || "default"; // -> "default"
+nullable3 ?? "default"; // -> false
 ```
 
 `??` でも `&&` や `||` と同様に短絡評価が発生します。
@@ -72,29 +72,29 @@ nullable3 ?? 'default'; // -> false
 
 ```js
 const obj = {};
-console.log(obj.a === '<fill here>');
+console.log(obj.a === "<fill here>");
 
 const arr = [];
-console.log(arr[0] === '<fill here>');
+console.log(arr[0] === "<fill here>");
 
 const id = (x) => x;
-console.log(id() === '<fill here>');
+console.log(id() === "<fill here>");
 
 const noop = () => {};
-console.log(noop() === '<fill here>');
+console.log(noop() === "<fill here>");
 
-console.log(typeof null === '<fill here>');
-console.log(typeof undefined === '<fill here>');
+console.log(typeof null === "<fill here>");
+console.log(typeof undefined === "<fill here>");
 
 const obj = {};
-console.log((obj || 'default') === '<fill here>');
-console.log((obj ?? 'default') === '<fill here>');
+console.log((obj || "default") === "<fill here>");
+console.log((obj ?? "default") === "<fill here>");
 
-console.log((undefined || 'default') === '<fill here>');
-console.log((undefined ?? 'default') === '<fill here>');
+console.log((undefined || "default") === "<fill here>");
+console.log((undefined ?? "default") === "<fill here>");
 
-console.log((false || 'default') === '<fill here>');
-console.log((false ?? 'default') === '<fill here>');
+console.log((false || "default") === "<fill here>");
+console.log((false ?? "default") === "<fill here>");
 ```
 
 全ての `console.log` による出力が `true` となるように、`'<fill hehre>'` と書かれた場所を書き換えてください。 (文字列である必要はありません。)

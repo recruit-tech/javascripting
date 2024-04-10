@@ -22,6 +22,7 @@
     "FUNCTIONS": "関数",
     "FUNCTION ARGUMENTS": "関数の引数",
     "ARROW FUNCTIONS": "アロー関数",
+    "DESTRUCTURING": "分割代入",
     "CALLBACK": "コールバック関数",
     "PROMISE": "Promiseオブジェクト",
     "PROMISE ALL": "Promise.all",

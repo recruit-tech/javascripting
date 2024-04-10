@@ -34,8 +34,8 @@ JavaScript において、真値 (truthy value) と偽値 (falsy value) は if �
 !true; // -> false
 !false; // -> true
 
-!''; // -> true
-!!''; // -> false
+!""; // -> true
+!!""; // -> false
 ```
 
 `&&` は論理積、 `||` は論理和を表す演算子です。
@@ -44,13 +44,13 @@ JavaScript において、真値 (truthy value) と偽値 (falsy value) は if �
 `true` や `false` を返すわけではないことに注意しましょう。
 
 ```js
-'' && '0'; // -> ""
-'0' && ''; // -> ""
-'0' && '1'; // -> "1"
+"" && "0"; // -> ""
+"0" && ""; // -> ""
+"0" && "1"; // -> "1"
 
-'0' || ''; // -> "0"
-'' || '0'; // -> "0"
-0 || ''; // -> ""
+"0" || ""; // -> "0"
+"" || "0"; // -> "0"
+0 || ""; // -> ""
 ```
 
 ## 短絡評価
@@ -66,7 +66,7 @@ JavaScript において、真値 (truthy value) と偽値 (falsy value) は if �
 
 ```js
 function f() {
-  console.log('f is called!');
+  console.log("f is called!");
 }
 
 true && f(); // "f is called!"
@@ -83,21 +83,21 @@ false || f(); // f is called!
 `booleans.js` ファイルを作り、以下のコードをコピーしてください。
 
 ```js
-console.log((0 === 1) === '<fill here>');
-console.log((0 === 1) === '<fill here>');
+console.log((0 === 1) === "<fill here>");
+console.log((0 === 1) === "<fill here>");
 
-console.log((10 == '10') === '<fill here>');
-console.log((10 === '10') === '<fill here>');
+console.log((10 == "10") === "<fill here>");
+console.log((10 === "10") === "<fill here>");
 
-console.log((0 && '') === '<fill here>');
-console.log((1 && '') === '<fill here>');
-console.log((0 && 10) === '<fill here>');
-console.log((1 && 10) === '<fill here>');
+console.log((0 && "") === "<fill here>");
+console.log((1 && "") === "<fill here>");
+console.log((0 && 10) === "<fill here>");
+console.log((1 && 10) === "<fill here>");
 
-console.log((0 || '') === '<fill here>');
-console.log((1 || '') === '<fill here>');
-console.log((0 || 10) === '<fill here>');
-console.log((1 || 10) === '<fill here>');
+console.log((0 || "") === "<fill here>");
+console.log((1 || "") === "<fill here>");
+console.log((0 || 10) === "<fill here>");
+console.log((1 || 10) === "<fill here>");
 ```
 
 全ての `console.log` による出力が `true` となるように、`'<fill hehre>'` と書かれた場所を書き換えてください。 (文字列である必要はありません。)
