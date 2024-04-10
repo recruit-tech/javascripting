@@ -24,6 +24,30 @@ example["pizza"];
 
 上の二つの行は、両方とも `yummy` という値を返します。
 
+## 存在しないプロパティへのアクセス
+
+以下のようなアクセスはどうなるでしょうか？
+
+```js
+const obj = {};
+obj.a;
+```
+
+結果は `undefined` が返ってきます。
+
+また `obj.a.b` のように `undefined` のプロパティにアクセスしようとすると、以下のようなエラーが出ます。
+
+```console
+Uncaught TypeError: Cannot read properties of undefined (reading 'b')
+```
+
+もし `undefined` かもしれないオブジェクトのプロパティにアクセスしたい場合は、 Optional Chaining `?.` を使うと良いでしょう。
+
+```js
+const obj = {};
+obj.a?.b; // -> undefined
+```
+
 ## やってみよう
 
 `object-properties.js` ファイルを作りましょう。
