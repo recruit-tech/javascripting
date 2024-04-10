@@ -35,7 +35,7 @@ null === undefined; // -> false
 
 ## 「`null` か `undefined` の場合」
 
-「比較」の課題の中では基本的に `==` ではなく `===` を使うよう説明しました。
+課題「真偽値」の説明の中で、基本的には `==` ではなく `===` を使うよう説明しました。
 
 しかし、「`null` か `undefined` の場合」という条件を書きたい場合には `==` の使用を許容するプロジェクトもあります。
 `obj == null` または `obj == undefined` は `obj === null || obj === undefined` と同じ意味になり、短く書くことができるからです。
@@ -49,17 +49,20 @@ null === undefined; // -> false
 
 ```js
 const nullable1 = {};
-nullable1 || "default"; // -> {}
-nullable1 ?? "default"; // -> {}
+nullable1 || 'default'; // -> {}
+nullable1 ?? 'default'; // -> {}
 
 const nullable2 = null;
-nullable2 || "default"; // -> "default"
-nullable2 ?? "default"; // -> "default"
+nullable2 || 'default'; // -> "default"
+nullable2 ?? 'default'; // -> "default"
 
 const nullable3 = false;
-nullable3 || "default"; // -> "default"
-nullable3 ?? "default"; // -> false
+nullable3 || 'default'; // -> "default"
+nullable3 ?? 'default'; // -> false
 ```
+
+`??` でも `&&` や `||` と同様に短絡評価が発生します。
+(短絡評価を忘れた場合は、課題「真偽値」の説明を読み直しましょう。)
 
 ## やってみよう
 
@@ -69,29 +72,29 @@ nullable3 ?? "default"; // -> false
 
 ```js
 const obj = {};
-console.log(obj.a === "<fill here>");
+console.log(obj.a === '<fill here>');
 
 const arr = [];
-console.log(arr[0] === "<fill here>");
+console.log(arr[0] === '<fill here>');
 
 const id = (x) => x;
-console.log(id() === "<fill here>");
+console.log(id() === '<fill here>');
 
 const noop = () => {};
-console.log(noop() === "<fill here>");
+console.log(noop() === '<fill here>');
 
-console.log(typeof null === "<fill here>");
-console.log(typeof undefined === "<fill here>");
+console.log(typeof null === '<fill here>');
+console.log(typeof undefined === '<fill here>');
 
 const obj = {};
-console.log((obj || "default") === "<fill here>");
-console.log((obj ?? "default") === "<fill here>");
+console.log((obj || 'default') === '<fill here>');
+console.log((obj ?? 'default') === '<fill here>');
 
-console.log((undefined || "default") === "<fill here>");
-console.log((undefined ?? "default") === "<fill here>");
+console.log((undefined || 'default') === '<fill here>');
+console.log((undefined ?? 'default') === '<fill here>');
 
-console.log((false || "default") === "<fill here>");
-console.log((false ?? "default") === "<fill here>");
+console.log((false || 'default') === '<fill here>');
+console.log((false ?? 'default') === '<fill here>');
 ```
 
 全ての `console.log` による出力が `true` となるように、`'<fill hehre>'` と書かれた場所を書き換えてください。 (文字列である必要はありません。)
