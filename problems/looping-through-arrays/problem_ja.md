@@ -18,6 +18,22 @@ greetings[1];
 
 **for ループ** の中では、変数 `i` を角括弧の中に入れて使います。整数を直接使うことはありません。
 
+```js
+for (let i = 0; i < greetings.length; i++) {
+  console.log(greetings[i]);
+}
+```
+
+## for...of
+
+配列に入った要素を先頭から順に処理する場合、 `for...of` 構文が使えます。
+
+```js
+for (const greeting of greetings) {
+  console.log(greeting);
+}
+```
+
 ## やってみよう
 
 `looping-through-arrays.js` ファイルを作りましょう。
@@ -28,15 +44,7 @@ greetings[1];
 ["cat", "dog", "rat"];
 ```
 
-for ループを作って、配列内の各文字列が複数形になるように変更します。
-
-for ループの中は次のようになるでしょう...
-
-```js
-pets[i] = pets[i] + "s";
-```
-
-forループが終わったら、 `console.log()` を使って配列 `pets` をターミナルに表示しましょう。
+for ループを作って、配列内の各文字列を複数形にしてターミナルに表示しましょう。
 
 次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
 

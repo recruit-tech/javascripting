@@ -1,7 +1,5 @@
 const pets = ["cat", "dog", "rat"];
 
-for (let i = 0; i < pets.length; i++) {
-  pets[i] = pets[i] + "s";
+for (const pet of pets) {
+  console.log(pet + "s");
 }
-
-console.log(pets);
