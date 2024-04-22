@@ -65,7 +65,19 @@ const fetchPosts = (user) => {
 const users = ["user1", "user2", "user3", "user4", "user5"];
 ```
 
-`users` 配列の中に入った文字列を `fetchPosts` 関数に渡し、各ユーザーの投稿を標準出力に表示する `displayAllPosts` 関数を定義し実行してください。
+`users` 配列の中に入った文字列をそれぞれ `fetchPosts` 関数に渡し、各ユーザーの投稿を標準出力に表示する `displayAllPosts` 関数を定義し実行してください。
+
+出力は以下のようになるでしょう...
+
+```
+user1: post1
+user1: post2
+user1: post3
+user1: post4
+user1: post5
+user2: post1
+:
+```
 
 次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
 

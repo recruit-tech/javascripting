@@ -86,7 +86,6 @@ console.log(noop() === "<fill here>");
 console.log(typeof null === "<fill here>");
 console.log(typeof undefined === "<fill here>");
 
-const obj = {};
 console.log((obj || "default") === "<fill here>");
 console.log((obj ?? "default") === "<fill here>");
 
