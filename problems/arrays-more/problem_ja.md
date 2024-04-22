@@ -60,11 +60,17 @@ sports
 
 # 問題
 
+`array-more.js` ファイルを作りましょう。
+
 `filter` と `map` を使って以下の配列 `numbers` から素数だけを導き出し、 16 進数に変換してください。
 
 ```js
 // 0 - 99 までの数字
 const numbers = [...Array(100).keys()];
 ```
+
+次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
+
+`javascripting verify array-more.js`
 
 hint: 16 進数への変換は `Number(i).toString(16)` でできます。

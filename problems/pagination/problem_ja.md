@@ -4,6 +4,8 @@
 
 # 問題
 
+`pagination.js` ファイルを作りましょう。
+
 次の条件を満たす `getPageNums` 関数を作ってください。
 
 `current`, `total`, `size` の 3 つの変数が与えられます。
@@ -46,5 +48,9 @@ console.log(getPageNums(4, 8, 3));
 - return: `[2, 3, 4, 5, 6, 7]`
 - `current = 4`, `total = 8`, `size = 3`
 - return: `[3, 4, 5]`
+
+次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
+
+`javascripting verify pagination.js`
 
 ヒント: 配列の始まりは現在のページから `size` の半分の長さ分引いたものを開始位置、半分の長さ分足したものを終了位置とすると定式化しやすいです。
