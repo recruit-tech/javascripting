@@ -1,7 +1,7 @@
 {
   "name": "@recruit-tech/javascripting",
   "description": "Learn JavaScript by adventuring around in the terminal.",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "repository": {
     "url": "https://github.com/recruit-tech/javascripting.git"
   },
