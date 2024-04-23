@@ -34,6 +34,7 @@ console.log(getPageNums(4, 6, 5));
 console.log(getPageNums(3, 8, 6));
 console.log(getPageNums(4, 8, 6));
 console.log(getPageNums(4, 8, 3));
+console.log(getPageNums(8, 8, 3));
 ```
 
 - `current = 1`, `total = 5`, `size = 5`
@@ -48,6 +49,8 @@ console.log(getPageNums(4, 8, 3));
 - return: `[2, 3, 4, 5, 6, 7]`
 - `current = 4`, `total = 8`, `size = 3`
 - return: `[3, 4, 5]`
+- `current = 8`, `total = 8`, `size = 3`
+- return: `[6, 7, 8]`
 
 次のコマンドを実行し、あなたのプログラムが正しく動くか確認しましょう。
 
