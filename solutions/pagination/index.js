@@ -1,18 +1,22 @@
+const assert = require("node:assert");
+
+/**
+ * @description `range` 関数はこのまま使ってください。
+ *
+ * @param {number} start 範囲の開始となる数値 (整数)
+ * @param {number} end 範囲の終了となる数値 (整数)
+ * @returns {number[]} 範囲を示す配列 (`[start, end)`)
+ *
+ * @example range(2, 5); // [2, 3, 4]
+ */
 function range(start, end) {
-  const r = [];
-  for (let i = Math.floor(start); i < Math.floor(end); i++) {
-    r.push(i + 1);
-  }
-  return r;
+  return new Array(end - start).fill(0).map((_, i) => i + start);
 }
 
 function getPageNums(current, total, size) {
-  const s = current - size / 2;
-  const e = current + size / 2;
-  const start = s < 0 ? 0 : e > total ? total - size : s;
-  const end = s < 0 ? size : e > total ? total : e;
-  const ranges = range(start, end);
-  return ranges;
+  const s = current - Math.floor((size - 1) / 2);
+  const start = s < 1 ? 1 : s + size > total ? total - size + 1 : s;
+  return range(start, start + size);
 }
 
 console.log(getPageNums(1, 5, 5));

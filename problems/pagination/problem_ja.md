@@ -15,11 +15,19 @@
 `total` からはみ出ないように、現在のページを中央値としてページの長さ分の配列の数字を返してください。
 
 ```javascript
-// range 関数はこのまま使ってください。
+/**
+ * @description `range` 関数はこのまま使ってください。
+ *
+ * @param {number} start 範囲の開始となる数値 (整数)
+ * @param {number} end 範囲の終了となる数値 (整数)
+ * @returns {number[]} 範囲を示す配列 (`[start, end)`)
+ *
+ * @example range(2, 5); // [2, 3, 4]
+ */
 function range(start, end) {
   const r = [];
   for (let i = Math.floor(start); i < Math.floor(end); i++) {
-    r.push(i + 1);
+    r.push(i);
   }
   return r;
 }
