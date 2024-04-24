@@ -22,7 +22,7 @@ console.log([...arr1, ...arr2]); // -> [0, 1, 2, 3, 4, 5]
 
 展開したオブジェクトのキーに重複があるとどうなるでしょうか？
 
-検証のために `object_spreading.js` ファイルを作りましょう。
+検証のために `object-spreading.js` ファイルを作りましょう。
 
 ファイルの中で、変数 `obj1` と `obj2` を次のようにして定義してください...
 
@@ -45,5 +45,5 @@ const obj2 = {
 次のコマンドを実行し、あなたのプログラムがどのように動くか確認しましょう...
 
 ```bash
-javascripting verify object_spreading.js
+javascripting verify object-spreading.js
 ```
