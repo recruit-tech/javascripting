@@ -21,3 +21,4 @@ console.log(getPageNums(4, 6, 5));
 console.log(getPageNums(3, 8, 6));
 console.log(getPageNums(4, 8, 6));
 console.log(getPageNums(4, 8, 3));
+console.log(getPageNums(8, 8, 3));
