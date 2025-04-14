@@ -28,6 +28,7 @@
     "PROMISE ALL": "Promise.all",
     "ASYNC AWAIT": "async/await",
     "SCOPE": "スコープ",
-    "USE REGEX LUKE": "正規表現を使え、ルーク"
+    "USE REGEX LUKE": "正規表現を使え、ルーク",
+    "FETCH": "Fetch API"
   }
 }
