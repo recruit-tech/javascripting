@@ -1,4 +1,4 @@
-console.log((0 === 1) === false);
+console.log((0 == 1) === false);
 console.log((0 === 1) === false);
 
 console.log((10 == "10") === true);
