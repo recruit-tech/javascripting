@@ -83,7 +83,7 @@ false || f(); // f is called!
 `booleans.js` ファイルを作り、以下のコードをコピーしてください。
 
 ```js
-console.log((0 === 1) === "<fill here>");
+console.log((0 == 1) === "<fill here>");
 console.log((0 === 1) === "<fill here>");
 
 console.log((10 == "10") === "<fill here>");
