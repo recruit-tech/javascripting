@@ -20,7 +20,7 @@ Promise.all([
 
 `Promise.any` 関数では引数の配列の要素内の全ての `Promise` の解決のを待つのとは逆に、どれかひとつが解決されることで返り値の `Promise` も解決されます。
 返り値の `Promise` によって解決される値は、引数の配列の要素の `Promise` の中で一番最初に解決された値になります。
-また、配列内の `Promise` のうちのいづれかが拒否されると返り値の `Promise` も拒否されます。
+また、配列内のすべての `Promise` が拒否されると返り値の `Promise` も拒否されます。
 
 ```js
 // resolved after 1000ms
