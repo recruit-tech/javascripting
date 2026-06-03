@@ -13,6 +13,7 @@
     "FOR LOOP": "forループ",
     "ARRAYS": "配列",
     "ARRAY FILTERING": "配列のフィルター",
+    "ARRAY REDUCE": "配列のreduce",
     "ACCESSING ARRAY VALUES": "配列の値にアクセスする",
     "LOOPING THROUGH ARRAYS": "配列をループする",
     "OBJECTS": "オブジェクト",
